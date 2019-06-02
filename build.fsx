@@ -211,7 +211,7 @@ let fakeStartInfo script workingDirectory args fsiargs environmentVars =
             info.EnvironmentVariables.[k] <- v
         for (k, v) in environmentVars do
             setVar k v
-        setVar "MSBuild" msBuildExe
+        //setVar "MSBuild" msBuildExe
         setVar "GIT" Git.CommandHelper.gitPath
         setVar "FSI" fsiPath)
 
