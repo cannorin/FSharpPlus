@@ -3,12 +3,12 @@ source https://ci.appveyor.com/nuget/fsharp-formatting
 
 nuget FSharp.Core ~> 4.1 redirects: force
 
-nuget FAKE
 nuget FSharp.Formatting ~> 3.0.0-beta08
 
 github fsharp/FAKE modules/Octokit/Octokit.fsx
 
 nuget MathNet.Numerics.FSharp redirects: force
-nuget NUnit ~> 2
-nuget NUnit.Runners ~> 2
+nuget NUnit ~> 3.11.0
 nuget FsCheck
+nuget NUnit3TestAdapter ~> 3.11.0
+nuget Microsoft.NET.Test.Sdk ~> 15.9.0
